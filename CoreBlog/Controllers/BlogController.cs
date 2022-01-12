@@ -21,13 +21,12 @@ namespace CoreBlog.Controllers
 
         public IActionResult BlogReadAll(int id)
         {
-            return View();
             //ViewBag.i = id;
             //ViewBag.CommentId = id;
 
-            //var result = bm.GetBlogByID(id);
+            var result = bm.GetBlogByID(id);
 
-            //return View(result);
+            return View(result);
         }
     }
 }
