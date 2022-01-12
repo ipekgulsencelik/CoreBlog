@@ -21,7 +21,7 @@ namespace CoreBlog.Controllers
 
         public IActionResult BlogReadAll(int id)
         {
-            //ViewBag.i = id;
+            ViewBag.id = id;
             //ViewBag.CommentId = id;
 
             var result = bm.GetBlogByID(id);
