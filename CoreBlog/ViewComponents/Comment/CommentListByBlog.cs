@@ -12,9 +12,9 @@ namespace CoreBlog.ViewComponents.Comment
     {
         CommentManager cm = new CommentManager(new EFCommentRepository());
 
-        public IViewComponentResult Invoke(int id)
+        public IViewComponentResult Invoke()
         {
-            var values = cm.GetList(id);
+            var values = cm.GetList(4);
 
             return View(values);
         }
